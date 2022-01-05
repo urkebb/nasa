@@ -1,0 +1,26 @@
+<div class="rover-container">
+  <h1 class="title">Rover details</h1>
+  <ng-container *ngIf="!this.loadingService.loading">
+    <app-card [classList]="'rover-item'">
+      <div class="id rover-detail">
+        <h2>ID: {{ this.rover?.id }}</h2>
+      </div>
+      <div class="name rover-detail">
+        <h3>Name: {{ this.rover?.name }}</h3>
+      </div>
+      <div class="date rover-detail">
+        <p class="launch-date">Launch date: {{ this.rover?.launch_date }}</p>
+        <p class="landing-date">Landing date: {{ this.rover?.landing_date }}</p>
+      </div>
+      <div class="bottom rover-detail">
+        <p>Status: {{ this.rover?.status }}</p>
+        <p>Max sol: {{ this.rover?.max_sol }}</p>
+      </div>
+
+      <div style="text-align: left" class="rover-detail">
+        <h3 style="margin-bottom: 1rem">Cameras:</h3>
+        <app-camera-list [cameras]="this.rover?.cameras"></app-camera-list>
+      </div>
+    </app-card>
+  </ng-container>
+</div>

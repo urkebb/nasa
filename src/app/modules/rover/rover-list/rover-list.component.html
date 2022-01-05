@@ -1,0 +1,16 @@
+<!-- ? Show rover id's and names -->
+<div class="rover-list-container">
+  <h1 class="title">Rover list</h1>
+
+  <div *ngIf="!this.loadingService.loading" class="rover-list">
+    <div
+      *ngFor="let rover of this.roverService.rovers; let i = index"
+      class="rover-container"
+    >
+      <app-card (onClick)="handleClick(rover.id)" [classList]="'rover-item'">
+        <h3 style="text-align: center">ID: {{ rover.id }}</h3>
+        <p style="text-align: center">Name: {{ rover.name }}</p>
+      </app-card>
+    </div>
+  </div>
+</div>

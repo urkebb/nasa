@@ -1,0 +1,44 @@
+.toast-container {
+  display: flex;
+  gap: 1rem;
+  position: fixed;
+  flex-direction: column;
+  min-width: 250px;
+  z-index: 200;
+  right: 30px;
+  left: 30px;
+  bottom: 30px;
+}
+
+@media (min-width: 600px) {
+  .toast-container {
+    left: auto;
+  }
+}
+
+.toast {
+  width: auto;
+  position: relative;
+  transition: 200ms visibility linear, 200ms transform linear;
+  visibility: hidden;
+  transform: translateY(200px);
+}
+
+.toast.show {
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.toast-card ::ng-deep > .card {
+  padding: 1rem;
+}
+
+.toast-card ::ng-deep > .card.success {
+  background: var(--success);
+  color: white;
+}
+
+.toast-card ::ng-deep > .card.error {
+  background: var(--error);
+  color: white;
+}

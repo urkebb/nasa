@@ -1,0 +1,79 @@
+/* ? input */
+
+.input-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.25rem;
+  font-size: var(--fs-input);
+}
+
+.input {
+  width: 100%;
+  padding: 0.25rem 1.25rem;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid black;
+  font-size: var(--fs-input);
+}
+
+/* ? errors */
+
+.input-error {
+  border-color: red !important;
+}
+
+.p-error {
+  color: red;
+}
+
+/* ? form */
+.form-field {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+/* ? page */
+
+.page-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+/* ? image */
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* ? scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: var(--border-radius);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: var(--border-radius);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: var(--border-radius);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: var(--border-radius);
+}

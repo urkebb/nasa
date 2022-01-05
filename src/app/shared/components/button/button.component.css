@@ -1,0 +1,32 @@
+.button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  box-shadow: var(--bs);
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: 100ms background linear, 100ms outline linear;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .button {
+    min-width: 150px;
+  }
+}
+
+.main-button {
+  background: var(--primary-color);
+}
+
+.main-button[disabled] {
+  background: var(--disabled-background) !important;
+  color: var(--disabled-color) !important;
+  outline: none !important;
+  cursor: not-allowed;
+}
+
+.main-button:hover {
+  background: var(--secondary-color);
+  color: black;
+}

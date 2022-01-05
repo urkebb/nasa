@@ -1,0 +1,13 @@
+<div class="toast-container">
+  <ng-container *ngFor="let toast of this.toastService.toasts; let i = index">
+    <div *ngIf="toast.show" [ngClass]="toast.show ? 'show' : ''" class="toast">
+      <app-card
+        [ngClass]="toast?.success ? 'success' : 'error'"
+        [classList]="'toast-card '"
+      >
+        <h3>{{ toast?.success ? "Success" : "Error" }}</h3>
+        <p>{{ toast?.message }}</p>
+      </app-card>
+    </div>
+  </ng-container>
+</div>

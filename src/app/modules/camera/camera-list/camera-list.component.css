@@ -1,0 +1,19 @@
+.camera-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.camera:last-child {
+  grid-column: 1 / span 1;
+}
+
+@media (min-width: 600px) {
+  .camera-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .camera:last-child {
+    grid-column: 2 / span 1;
+  }
+}

@@ -1,0 +1,27 @@
+:root {
+  /* ? colors */
+  --primary-color: rgb(43, 103, 119);
+  --secondary-color: rgb(173, 239, 209);
+  --disabled-background: rgb(197, 197, 197);
+  --disabled-color: rgb(241, 241, 241);
+  --error: #cc0000;
+  --success: #4bb543;
+
+  /* ? font size */
+  --h2: 3rem;
+  --h2-weight: 400;
+  --h1: 7rem;
+  --h3: 1.5rem;
+  --h4: 1.2rem;
+
+  /* ? border radius */
+  --border-radius: 8px;
+
+  /* --transition: all 0.2s;
+  --navbar-padding: 2rem;
+  --link-size: var(--h3);*/
+  --fs-input: 0.9rem;
+
+  /* ? box shadow */
+  --bs: 0 2px 8px rgba(0, 0, 0, 0.35);
+}

@@ -1,0 +1,39 @@
+<main class="page-content">
+  <h1 class="title">Register page</h1>
+  <app-card className="main-card">
+    <form class="form" [formGroup]="this.form" (submit)="handleSubmit()">
+      <div class="form-field">
+        <app-input
+          controlName="name"
+          label="Full name"
+          placeholder="Full name"
+        ></app-input>
+      </div>
+
+      <div class="form-field">
+        <app-input
+          controlName="username"
+          label="Username"
+          placeholder="Username"
+        ></app-input>
+      </div>
+
+      <div class="form-field">
+        <app-input
+          controlName="email"
+          label="Email"
+          placeholder="Email"
+        ></app-input>
+      </div>
+      <div class="btn-container">
+        <app-button
+          [isDisabled]="!this.form.valid"
+          [classList]="'main-button'"
+          type="submit"
+          text="Register"
+        >
+        </app-button>
+      </div>
+    </form>
+  </app-card>
+</main>

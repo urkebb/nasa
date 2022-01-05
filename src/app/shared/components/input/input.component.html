@@ -1,0 +1,25 @@
+<div class="input-main">
+  <label class="input-label">{{ this.label }}</label>
+  <input
+    [formControlName]="this.controlName && this.controlName"
+    [placeholder]="this.placeholder ? this.placeholder : ''"
+    (input)="handleChange($event)"
+    class="input"
+    [ngClass]="{ 'input-error': this.errors }"
+  />
+
+  <ng-container *ngIf="errors">
+    <small *ngIf="errors.maxlength" class="p-error">
+      Input has {{ errors.maxlength.actualLength }} characters and it needs to
+      have less then {{ errors.maxlength.requiredLength }} characters.
+    </small>
+
+    <small *ngIf="errors.required == true" class="p-error">
+      This field is required
+    </small>
+
+    <small *ngIf="errors.email == true" class="p-error">
+      Please enter valid email
+    </small>
+  </ng-container>
+</div>

@@ -1,0 +1,8 @@
+/* * variables */
+@import "./partials/_variables.css";
+
+/* * resets */
+@import "./partials/_resets.css";
+
+/* * globals */
+@import "./partials/_globals.css";

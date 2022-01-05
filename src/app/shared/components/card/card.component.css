@@ -1,0 +1,17 @@
+.card {
+  position: relative;
+  box-shadow: var(--bs);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  overflow: hidden;
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+  transition: 150ms background linear;
+}
+
+@media (min-width: 600px) {
+  .card {
+    padding: 3rem;
+  }
+}

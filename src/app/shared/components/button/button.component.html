@@ -1,0 +1,8 @@
+<button
+  [disabled]="this.disabled"
+  [type]="this.type"
+  [class]="'button ' + this.classList"
+  (click)="handleClick()"
+>
+  <p>{{ this.text }}</p>
+</button>

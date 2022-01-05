@@ -1,0 +1,8 @@
+/* ::ng-deep .main-card {
+  max-width: 800px;
+} */
+
+.btn-container {
+  margin-top: 2rem;
+  width: 100%;
+}

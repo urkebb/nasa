@@ -1,0 +1,14 @@
+<div class="page-content">
+  <h1 class="title">Photos</h1>
+  <ng-container *ngIf="!this.loadingService.loading">
+    <app-card>
+      <div class="photos-container">
+        <ng-container *ngFor="let photo of this.photos">
+          <div class="photo">
+            <img [src]="photo.img_src" />
+          </div>
+        </ng-container>
+      </div>
+    </app-card>
+  </ng-container>
+</div>
